@@ -1,0 +1,142 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.AppSettings">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--<Switch-->
+            <!--android:id="@+id/whatsappBtn"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_below="@+id/textView2"-->
+            <!--android:layout_marginTop="21dp"-->
+            <!--android:drawableLeft="@drawable/whatsapp"-->
+            <!--android:paddingLeft="20dp"-->
+            <!--android:paddingRight="20dp"-->
+            <!--android:switchMinWidth="45dp"-->
+            <!--android:text="WhatsApp"-->
+            <!--android:textSize="20dp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/textView2"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:text="Notification Mode"-->
+            <!--android:textSize="25dp"-->
+            <!--android:textStyle="bold" />-->
+
+        <Switch
+            android:id="@+id/smsBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:drawableLeft="@drawable/sms1"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:switchMinWidth="45dp"
+            android:text="SMS"
+            android:textSize="20dp" />
+
+        <Switch
+            android:id="@+id/callSwitchBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/smsBtn"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:drawableLeft="@drawable/phone1"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:switchMinWidth="45dp"
+            android:text="Call"
+            android:textSize="20dp" />
+
+
+        <EditText
+            android:id="@+id/msgEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/callSwitchBtn"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_text_settings"
+            android:padding="15dp"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:hint="Text Message for SMS"
+            android:gravity="top|left"
+            android:scrollHorizontally="false"
+            android:lines="7"
+            android:maxLines="7"
+            android:minLines="7"
+            android:scrollbars="vertical"
+            android:maxLength="140"
+            />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Characters entered"
+            android:layout_below="@+id/msgEditText"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:id="@+id/char_limit"/>
+
+        <com.google.android.gms.ads.AdView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/adView1"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/EditText1_ad_id"/>
+
+        <com.google.android.gms.ads.AdView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/adView2"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/EditText2_ad_id"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/msgEditText"
+            android:layout_alignEnd="@+id/msgEditText" />
+
+        <!--android:inputType="textMultiLine" -->
+
+        <!--<Button-->
+            <!--android:id="@+id/saveSettingsBtn"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignEnd="@+id/msgEditText"-->
+            <!--android:layout_alignRight="@+id/msgEditText"-->
+            <!--android:layout_below="@+id/msgEditText"-->
+            <!--android:drawableLeft="@drawable/save1"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:text="Save" />-->
+
+    </RelativeLayout>
+</ScrollView>
+</FrameLayout>

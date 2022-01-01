@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Just Reached</string>
+    <string name="formatted_place_data">Name: %1$s\nAddress: %2$s\nPhone: %3$s\nWebsite: %4$s\nRating: %5$s\nId: %6$s\n</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="EditText1_ad_id">ca-app-pub-5757998721487623/6038044330</string>
+    <string name="EditText2_ad_id">ca-app-pub-5757998721487623/2191132814</string>
+    <string name="Map_ad_id">ca-app-pub-5757998721487623/4026958660</string>
+
+    <string name="TestAd1">ca-app-pub-3940256099942544/6300978111</string>
+
+
+    <string-array name="array_names">
+        <item>Home</item>
+        <item>Contacts</item>
+        <item>Share</item>
+        <item>Settings</item>
+    </string-array>
+
+    <string name="drawer_open">Drawer Open</string>
+    <string name="drawer_close">Drawer Close</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="view_items">
+        <item>Internet Settings</item>
+        <item>Location Settings</item>
+
+        <!--<item>start maps in satellite view</item>-->
+        <!--<item>Internet Settings</item>-->
+        <!--<item>About</item>-->
+        <item>Send Feedback</item>
+    </string-array>
+
+    <!--<integer-array name="view_codes">-->
+    <!--<item>0</item>-->
+    <!--<item>1</item>-->
+    <!--</integer-array>-->
+
+</resources>

@@ -1,0 +1,57 @@
+<FrameLayout xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.justreached.Activities.HomeFragment">
+
+    <LinearLayout
+
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/mySearchEditText"
+                android:layout_alignParentLeft="true"
+                android:hint="Search a location"
+                android:textColor="#000000"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:layout_below="@+id/l1"
+                android:drawableLeft="@drawable/ic_search"
+                android:imeOptions="actionDone"></EditText>
+
+
+        </RelativeLayout>
+
+        <com.google.android.gms.ads.AdView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/adView3"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/Map_ad_id"/>
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.justreached.Activities.MapsActivity" />
+
+
+    </LinearLayout>
+
+</FrameLayout>
